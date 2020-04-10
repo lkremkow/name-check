@@ -1,12 +1,21 @@
 const fs = require('fs');
 
 // adjust this to determine the number of characters in the string
-let string_length = 5;
+// default length is 5 for 6 characters
+let string_length = 3;
 
 let string_position_counter = new Array(string_length);
 
-let start_char = 48; // 0
+// 0 to 9 to a to z
+// let start_char = 48; // 0
+// let end_char = 122; // z
+
+// 0 to 9
+// let start_char = 48; // 0
 // let end_char = 57; // 9
+
+// a to z
+let start_char = 97; // a
 let end_char = 122; // z
 
 for (let counter = 0; counter < string_length; counter++) {

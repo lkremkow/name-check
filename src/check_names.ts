@@ -5,7 +5,8 @@ let lineNr: number = 0;
 
 let dns = require('dns');
 
-let domain_name: string = ".tftg.net";
+// let domain_name: string = ".tftg.net";
+let domain_name: string = ".com";
 
 let dns_options = {
   family: 4,
@@ -25,7 +26,7 @@ var data_stream = file_system.createReadStream('host_names.txt')
         if (line.length > 0 ) {
           query_dns(line);
         };
-        
+
         // resume the readstream, possibly from a callback
         // data_stream.resume();
     })

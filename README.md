@@ -5,13 +5,26 @@
 
 ## Notes
 
-   TODO: Describe what this does.
+   Generate a file with all the possible names that can be generated from a list of permitted characters.
+
+   Check against DNS if these names are registered in DNS.
 
 
 ## Requirements
 
-   * [Node.js](https://nodejs.org/en/); tested with 8.9.4, 8.11.1 and 8.11.3 LTS
-   * [NPM](https://www.npmjs.com); tested with 5.6.0, 6.1.0, and 6.3.0
+   * [Node.js](https://nodejs.org/en/); tested with 8.9.4, 8.11.1, 8.11.3 LTS, 12.16.2
+   * [NPM](https://www.npmjs.com); tested with 5.6.0, 6.1.0, 6.3.0, 6.14.4
+   * [TypeScript](https://www.npmjs.com/package/typescript); tested with 3.8.3
+
+   Check that npm is up to date: `sudo npm i -g npm`
+
+   Clear npm cache `sudo npm cache clean -f`
+
+   Install the helper "n": `sudo npm install -g n`
+
+   Install latest stable Node.js version: `sudo n stable`
+
+   Install TypeScript `npm install -g typescript`
 
 
 ## Installation
@@ -21,6 +34,8 @@
    `cd name-check`
 
    `npm install`
+
+   Change "start_char" and "end_char" in "src/main.ts" to define in which range of characters to generate names.
 
    Change ".tftg.net" to the domain you are enumerating in "src/check_names.ts".
 
@@ -51,7 +66,7 @@
 
 ## License
 
-   Copyright (C) 2018 Leif Kremkow <kremkow@tftg.net> (http://www.tftg.com)
+   Copyright (C) 2020 Leif Kremkow <kremkow@tftg.net> (http://www.tftg.com)
 
    This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, version 3 of the License.
 
